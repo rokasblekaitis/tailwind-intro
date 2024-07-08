@@ -2,22 +2,31 @@
 module.exports = {
   content: ["./*.html"],
   theme: {
-    screens: {
-      sm: "480px",
-      md: "768px",
-      lg: "976px",
-      xl: "1440px",
+    fontSize: {
+      xs: ["0.75rem", { lineHeight: "1rem" }],
+      sm: ["0.875rem", { lineHeight: "1.5rem" }],
+      base: ["1rem", { lineHeight: "1.75rem" }],
+      lg: ["1.125rem", { lineHeight: "2rem" }],
+      xl: ["1.25rem", { lineHeight: "2rem" }],
+      "2xl": ["1.5rem", { lineHeight: "2rem" }],
+      "3xl": ["2rem", { lineHeight: "2.5rem" }],
+      "4xl": ["2.5rem", { lineHeight: "3.5rem" }],
+      "5xl": ["3rem", { lineHeight: "3.5rem" }],
+      "6xl": ["3.75rem", { lineHeight: "1" }],
+      "7xl": ["4.5rem", { lineHeight: "1.1" }],
+      "8xl": ["6rem", { lineHeight: "1" }],
+      "9xl": ["8rem", { lineHeight: "1" }],
     },
     extend: {
-      colors: {
-        brightRed: "hsl(12, 88%, 59%)",
-        brightRedLight: "hsl(12, 88%, 69%)",
-        brightRedSupLight: "hsl(12, 88%, 95%)",
-        darkBlue: "hsl(228, 39%, 23%)",
-        darkGrayishBlue: "hsl(227, 12%, 61%)",
-        veryDarkBlue: "hsl(223, 12%, 13%)",
-        veryPaleRed: "hsl(13, 100%, 96%)",
-        veryLightGray: "hsl(0, 0%, 98%)",
+      borderRadius: {
+        "4xl": "2rem",
+      },
+      fontFamily: {
+        sans: "Inter",
+        display: "Lexend",
+      },
+      maxWidth: {
+        "2xl": "40rem",
       },
     },
   },
